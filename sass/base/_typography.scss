@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+body {
+    font-family: "Atyp", sans-serif;
+    font-weight: 400;
+}
+
+.titile {
+    font-family: "Atyp", sans-serif;
+    font-size: 22px;
+    line-height: 28.07px;
+    color: variables.$primary-title;
+}
+
+.desc {
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 28px;
+    color: variables.$gray;
+}
+.button {
+    
+}

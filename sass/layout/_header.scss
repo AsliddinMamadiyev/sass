@@ -1,0 +1,63 @@
+@use "../abstracts/variables";
+
+.header {
+    &-top {
+        background: variables.$blue;
+    }
+
+    &-top__box {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-top__number,
+    &-top__desc {
+        font-family: Open Sans;
+        font-size: 14px;
+        line-height: 45px;
+        color: variables.$white;
+    }
+    &-menu {
+        padding: 10px 0;
+    }
+    &-menu__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        width: 174px;
+        height: 94px;
+
+        &.log-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        .nav-link {
+            font-family: "Mazzardh", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 97px;
+            color: variables.$deep-gray;
+            text-transform: uppercase;
+        }
+        .nav-link.active {
+            background: variables.$brown;
+            padding: 9px 20px;
+            color: variables.$white;
+            border-radius: 10px;
+        }
+    }
+
+
+}

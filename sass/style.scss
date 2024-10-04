@@ -1,0 +1,132 @@
+@use './abstracts/variables';
+@use './layout';
+@use './base';
+
+// banner start
+.banner {
+    width: 100%;
+    height: 634px;
+
+    &-box {
+        width: 1920px;
+        height: 634px;
+        margin: 0 auto;
+    }
+
+    &-box::before {
+        content: '';
+        width: 1920px;
+        height: 634px;
+        color: #F2F2F2;
+        top: 0;
+        left: 0;
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// form
+form {
+    background: #F9F9F9;
+    border-bottom: 5px solid #F2F2F2;
+    border-top: 5px solid #F2F2F2;
+    padding: 30px 0;
+    margin-top: -5px;
+
+    .form-desc {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28.07px;
+        color: variables.$blue;
+    }
+
+    .form-register {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+
+        input {
+            background: #F2F2F2;
+            padding: 14px 0 14px 12px;
+            border: none;
+            border-radius: 5px;
+            width: 491px;
+        }
+
+        input::placeholder {
+            font-family: "Mazzardh", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.07px;
+            color: #757575;
+        }
+
+        .btn {
+            padding: 14px 15px;
+            background: variables.$blue;
+            border-radius: 5px;
+            color: variables.$white;
+            transition: .3s linear;
+        }
+
+        .btn:hover {
+            background: variables.$brown;
+        }
+    }
+
+}
+
+// hero
+.hero {
+    padding: 60px 0 100px 0;
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
+        gap: 35px;
+    }
+    &-cards {
+        max-width: 266px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 85px;
+        height: 77px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-info {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 25.52px;
+        color: variables.$blue;
+        padding: 29px 0 13px 0;
+    }
+
+    span {
+        font-family: "Mazardh", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        color: variables.$deep-gray;
+    }
+
+    p {
+        font-family: "Mazardh", sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        color: variables.$gray;
+        padding-top: 39px;
+    }
+}
