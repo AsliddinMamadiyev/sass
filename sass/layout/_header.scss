@@ -1,5 +1,5 @@
 @use "../abstracts/variables";
-
+// header
 .header {
     &-top {
         background: variables.$blue;
@@ -41,23 +41,25 @@
     .nav-list {
         display: flex;
         justify-content: space-between;
-        gap: 40px;
 
+        .nav-item {
+            line-height: 97px;
+        }
         .nav-link {
             font-family: "Mazzardh", sans-serif;
             font-size: 14px;
             font-weight: 600;
-            line-height: 97px;
             color: variables.$deep-gray;
             text-transform: uppercase;
+            transition: 0.3s linear;
+        padding: 9px 20px;
+        border-radius: 10px;
+
         }
-        .nav-link.active {
+        .nav-link.active,
+        .nav-link:hover {
             background: variables.$brown;
-            padding: 9px 20px;
             color: variables.$white;
-            border-radius: 10px;
         }
     }
-
-
 }

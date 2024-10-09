@@ -1,49 +1,36 @@
-@use './abstracts/variables';
-@use './layout';
+@use './normalize.scss';
 @use './base';
+@use './layout';
+@use './abstracts/variables';
 
 // banner start
 .banner {
     width: 100%;
-    height: 634px;
-
-    &-box {
-        width: 1920px;
-        height: 634px;
-        margin: 0 auto;
-    }
-
-    &-box::before {
-        content: '';
-        width: 1920px;
-        height: 634px;
-        color: #F2F2F2;
-        top: 0;
-        left: 0;
-    }
+    height: 100%;
 
     &-img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 
-// form
-form {
+// registration
+.registration {
     background: #F9F9F9;
     border-bottom: 5px solid #F2F2F2;
     border-top: 5px solid #F2F2F2;
     padding: 30px 0;
-    margin-top: -5px;
+    margin-top: -12px;
 
-    .form-desc {
+    &-title {
         font-size: 22px;
         font-weight: 400;
         line-height: 28.07px;
         color: variables.$blue;
     }
 
-    .form-register {
+    form {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -80,31 +67,41 @@ form {
 
 }
 
-// hero
-.hero {
+//services 
+.services {
     padding: 60px 0 100px 0;
+
     &-box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
         gap: 35px;
     }
-    &-cards {
+
+    &-card {
         max-width: 266px;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .card-img {
+    &-card__img {
         width: 85px;
         height: 77px;
+
         img {
             width: 100%;
             height: 100%;
+            transition: .3s all linear;
+        }
+
+        img:hover {
+            transform: rotate(30deg);
         }
     }
+
     &-info {
         text-align: center;
+        align-items: flex-start;
     }
 
     h5 {
@@ -112,6 +109,9 @@ form {
         line-height: 25.52px;
         color: variables.$blue;
         padding: 29px 0 13px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     span {
@@ -120,6 +120,9 @@ form {
         font-weight: 300;
         line-height: 28px;
         color: variables.$deep-gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     p {
@@ -128,5 +131,185 @@ form {
         line-height: 28px;
         color: variables.$gray;
         padding-top: 39px;
+        width: 266px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+// team 
+.team {
+    padding-bottom: 80px;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title {
+        white-space: nowrap;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #F4F4F4;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+        gap: 24px;
+        padding-top: 50px;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &-card:hover h3 {
+        color: variables.$brown;
+    }
+
+    &-card:hover .background {
+        background-color: rgba(53, 92, 125, 0.7);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &-card__img {
+        max-width: 274px;
+        height: 274px;
+        position: relative;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            object-fit: cover;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            transition: .3s all linear;
+        }
+
+        .background-list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -4;
+
+            .background-item {
+                width: 32px;
+                height: 32px;
+                background: variables.$white;
+                padding: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+
+    &-card__box {
+        padding-top: 15px;
+        padding-bottom: 12px;
+        border-left: 1px solid #F2F1F2;
+        border-bottom: 1px solid #F2F1F2;
+        border-right: 1px solid #F2F1F2;
+        max-width: 274px;
+    }
+
+    &-card__name {
+        font-family: "Mazzardh", sans-serif;
+        font-size: 18px;
+        line-height: 22.97px;
+        color: variables.$blue;
+        transition: .3s all linear;
+    }
+
+    &-card__job {
+        font-family: "Mazzardh", sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        color: variables.$charcoal;
+        padding-top: 3px;
+    }
+}
+
+// stats 
+.stats {
+    background-color: variables.$blue;
+    padding: 40px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 150px;
+
+        &__icon {
+            padding: 22px;
+            border-radius: 50%;
+            border: 1px solid #EDEDED;
+            box-shadow: 0px 2px 1px 0px #233F57;
+            width: 66px;
+            height: 66px;
+            background-color: variables.$white;
+            transition: .3s all linear;
+        }
+
+        &__icon:hover {
+            transform: rotate(360deg);
+        }
+
+
+        &__numb {
+            font-size: 45px;
+            line-height: 28px;
+            color: variables.$white;
+            padding: 12px 0 13px 0;
+        }
+
+        &__info {
+            font-family: "Mazzardh", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 21.79px;
+            color: #739CBF;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 150px;
+        }
     }
 }

@@ -8,6 +8,8 @@
     <link rel="icon" href="images/kafolat-logo.jpg">
     <!-- fonts -->
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="sass/normalize.scss">
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -26,8 +28,10 @@
             <div class="header-menu">
                 <div class="container">
                     <div class="header-menu__box">
-                        <div class="header-logo" width="175" height="94">
-                            <img class="log-img" src="images/logo-guru.svg" alt="logo img">
+                        <div class="header-logo">
+                            <a href="#!">
+                                <img class="log-img" src="images/logo-guru.svg" alt="logo img">
+                            </a>
                         </div>
                         <nav class="nav">
                             <ul class="nav-list">
@@ -60,61 +64,60 @@
         </header>
         <main>
             <section class="banner">
-                <div class="banner-box">
-                    <img class="banner-img" src="images/banner-img.svg" alt="banner img">
-                </div>
+                <img class="banner-img" src="images/banner-img.svg" alt="banner img">
             </section>
-            <form>
+            <section class="registration">
                 <div class="container">
-                    <h5 class="form-desc">Be the first to know about new Course and Discounts: Subscribe to Newsletter</h5>
-                    <div class="form-register">
-                        <input type="name" placeholder="Enter Name">
+                    <h5 class="registration-title">Be the first to know about new Course and Discounts: Subscribe to Newsletter</h5>
+                    <form>
+                        <input type="text" placeholder="Enter Name">
                         <input type="email" placeholder="Enter Email">
                         <button class="btn" type="submit">Subscribe</button>
-                    </div>
+                    </form>
                 </div>
-            </form>
-            <section class="hero">
+            </section>
+            <!-- services -->
+            <section class="services">
                 <div class="container">
-                    <div class="hero-box">
-                        <div class="hero-cards">
-                            <div class="card-img">
+                    <div class="services-box">
+                        <div class="services-card">
+                            <div class="services-card__img">
                                 <img src="images/icons/learn-easily.svg" alt="icon">
                             </div>
-                            <div class="hero-info">
+                            <div class="services-info">
                                 <h5>We Coach Easy</h5>
                             <span>Learn the best Way</span>
                             <p>Sit voluptatem accusantium doloremque
                                 laudantium, totam rem aperiam.</p>
                             </div>
                         </div>
-                        <div class="hero-cards">
-                            <div class="card-img">
+                        <div class="services-card">
+                            <div class="services-card__img">
                                 <img src="images/icons/wizard-hat.svg" alt="icon">
                             </div>
-                            <div class="hero-info">
+                            <div class="services-info">
                                 <h5>We Coach Easy</h5>
                             <span>Learn the best Way</span>
                             <p>Sit voluptatem accusantium doloremque
                                 laudantium, totam rem aperiam.</p>
                             </div>
                         </div>
-                        <div class="hero-cards">
-                            <div class="card-img">
+                        <div class="services-card">
+                            <div class="services-card__img">
                                 <img src="images/icons/lump.svg" alt="icon">
                             </div>
-                            <div class="hero-info">
+                            <div class="services-info">
                                 <h5>We Coach Easy</h5>
                             <span>Learn the best Way</span>
                             <p>Sit voluptatem accusantium doloremque
                                 laudantium, totam rem aperiam.</p>
                             </div>
                         </div>
-                        <div class="hero-cards">
-                            <div class="card-img">
-                                <img src="images/icons/user.svg" alt="icon">
+                        <div class="services-card">
+                            <div class="services-card__img">
+                                <img src="images/icons/user-log.svg" alt="icon">
                             </div>
-                            <div class="hero-info">
+                            <div class="services-info">
                                 <h5>We Coach Easy</h5>
                             <span>Learn the best Way</span>
                             <p>Sit voluptatem accusantium doloremque
@@ -124,6 +127,105 @@
                     </div>
                 </div>
             </section>
+            <!-- team -->
+            <section class="team">
+                <div class="container">
+                    <div class="team-box">
+                        <h2 class="title">Our Team</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="team-cards">
+                        <div class="team-card">
+                            <div class="team-card__img">
+                                <img src="images/mickey.svg" alt="user img">
+                                <div class="background">
+                                    <ul class="background-list">
+                                        <li class="background-item">
+                                            <a class="background-link" href="#">
+                                                <img src="images/icons/facebook-icon.svg" alt="facebook icon">
+                                            </a>
+                                        </li>
+                                        <li class="background-item">
+                                            <a class="background-link" href="#">
+                                                <img src="images/icons/twitter-icon.svg" alt="twitter icon">
+                                            </a>
+                                        </li>
+                                        <li class="background-item">
+                                            <a class="background-link" href="#">
+                                                <img src="images/icons/youtube-icon.svg" alt="youtube icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-card__box">
+                                <h3 class="team-card__name">Mickey Rorey</h3>
+                                <span class="team-card__job">Founder</span>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__img">
+                                <img src="images/dammie.svg" alt="user img">
+                            </div>
+                            <div class="team-card__box">
+                                <h3 class="team-card__name">Damie Glendell</h3>
+                                <span class="team-card__job">Co-Director</span>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__img">
+                                <img src="images/jenny.svg" alt="user img">
+                            </div>
+                            <div class="team-card__box">
+                                <h3 class="team-card__name">Jenny Sheen</h3>
+                                <span class="team-card__job">Marketing Director</span>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__img">
+                                <img src="images/james.svg" alt="user img">
+                            </div>
+                            <div class="team-card__box">
+                                <h3 class="team-card__name">James Catwin</h3>
+                                <span class="team-card__job">Art Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- stats -->
+             <section class="stats">
+                <div class="container">
+                    <div class="stats-card">
+                        <div class="stats-card__icon">
+                            <img src="images/icons/user-group__icon.svg" alt="user icon">
+                        </div>
+                        <h3 class="stats-card__numb">3000</h3>
+                        <span class="stats-card__info">Learners Educated</span>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-card__icon">
+                            <img src="images/icons/cup-icon.svg" alt="cup icon">
+                        </div>
+                        <h3 class="stats-card__numb">250</h3>
+                        <span class="stats-card__info">Categories Listed</span>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-card__icon">
+                            <img src="images/icons/flag-icon.svg" alt="flag icon">
+                        </div>
+                        <h3 class="stats-card__numb">75</h3>
+                        <span class="stats-card__info">Languages Available</span>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-card__icon">
+                            <img src="images/icons/book-icon.svg" alt="book icon">
+                        </div>
+                        <h3 class="stats-card__numb">1530</h3>
+                        <span class="stats-card__info">Courses Available</span>
+                    </div>
+                </div>
+             </section>
         </main>
         <footer></footer>
     </div>
