@@ -141,22 +141,6 @@
 .team {
     padding-bottom: 80px;
 
-    &-box {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .title {
-        white-space: nowrap;
-    }
-
-    .line {
-        width: 100%;
-        height: 1px;
-        background-color: #F4F4F4;
-    }
-
     &-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
@@ -210,6 +194,7 @@
                 transform: translate(-50%);
             }
         }
+
         .background:hover .background-link {
             opacity: 1;
         }
@@ -228,10 +213,12 @@
             opacity: 0;
             transition: .3s all linear;
         }
+
         .background-link:hover {
             background: variables.$brown;
         }
-        .background-link:hover svg {
+
+        .background-link:hover svg path {
             fill: variables.$white;
         }
     }
@@ -277,7 +264,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        // max-width: 150px;
 
         &__icon {
             padding: 22px;
@@ -314,4 +300,93 @@
             width: 150px;
         }
     }
+}
+
+// courses
+.courses {
+    padding: 80px 0 58px 0;
+
+    .slider-controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+        gap: 14px;
+        padding-top: 50px;
+    }
+
+    &-card {
+        border-radius: 5px 5px 0 0;
+
+        &__link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        &__info {
+            border-left: 1px solid #F2F1F2;
+            border-bottom: 1px solid #F2F1F2;
+            border-right: 1px solid #F2F1F2;
+            padding: 25px 20px 20px 20px;
+            max-width: 376px;
+            margin-top: -5px;
+        }
+
+        .card-info__category a {
+            font-family: "Mazzardh", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 28px;
+            color: variables.$brown;
+        }
+
+        .card-info__topic a {
+            font-size: 18px;
+            line-height: 22.97px;
+            color: variables.$blue;
+            transition: .3s all linear;
+            padding: 7px 0 20px 0;
+        }
+
+        .card-info__topic a:hover {
+            color: variables.$brown;
+        }
+
+        .card-flow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-btn {
+            padding: 9px 10px;
+            background: variables.$blue;
+            border-radius: 5px;
+            color: variables.$white;
+            transition: .3s all linear;
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        .card-btn:hover {
+            background: variables.$brown;
+        }
+
+        .card-lesson {
+            font-family: "Mazzardh", sans-serif;
+            font-size: 12px;
+            line-height: 28px;
+            color: variables.$gray;
+        }
+
+    }
+
+
+
 }

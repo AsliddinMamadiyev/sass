@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+
 body {
     font-family: "Atyp", sans-serif;
     font-weight: 400;
@@ -9,18 +10,32 @@ body {
     font-size: 22px;
     line-height: 28.07px;
     color: variables.$primary-title;
+    white-space: nowrap;
 }
 
 .desc {
-    font-family: Open Sans;
+    font-family: "Mazzardh", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: variables.$gray;
 }
+
 .title-info {
     font-size: 20px;
-        line-height: 25.52px;
-        color: variables.$blue;
-        padding: 29px 0 13px 0;
-        max-width: inherit;
+    line-height: 25.52px;
+    color: variables.$blue;
+    padding: 29px 0 13px 0;
+    max-width: inherit;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #F4F4F4;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }

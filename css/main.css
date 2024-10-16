@@ -387,10 +387,11 @@ body {
   font-size: 22px;
   line-height: 28.07px;
   color: #2C2C2C;
+  white-space: nowrap;
 }
 
 .desc {
-  font-family: Open Sans;
+  font-family: "Mazzardh", sans-serif;
   font-size: 14px;
   line-height: 28px;
   color: #86999B;
@@ -402,6 +403,18 @@ body {
   color: #355C7D;
   padding: 29px 0 13px 0;
   max-width: inherit;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #F4F4F4;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .header-top {
@@ -570,19 +583,6 @@ body {
 .team {
   padding-bottom: 80px;
 }
-.team-box {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.team .title {
-  white-space: nowrap;
-}
-.team .line {
-  width: 100%;
-  height: 1px;
-  background-color: #F4F4F4;
-}
 .team-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
@@ -650,7 +650,7 @@ body {
 .team-card__img .background-link:hover {
   background: #D95B43;
 }
-.team-card__img .background-link:hover svg {
+.team-card__img .background-link:hover svg path {
   fill: #FFFFFF;
 }
 .team-card__box {
@@ -719,6 +719,78 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 150px;
+}
+
+.courses {
+  padding: 80px 0 58px 0;
+}
+.courses .slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.courses-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  gap: 14px;
+  padding-top: 50px;
+}
+.courses-card {
+  border-radius: 5px 5px 0 0;
+}
+.courses-card__link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.courses-card__info {
+  border-left: 1px solid #F2F1F2;
+  border-bottom: 1px solid #F2F1F2;
+  border-right: 1px solid #F2F1F2;
+  padding: 25px 20px 20px 20px;
+  max-width: 376px;
+  margin-top: -5px;
+}
+.courses-card .card-info__category a {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #D95B43;
+}
+.courses-card .card-info__topic a {
+  font-size: 18px;
+  line-height: 22.97px;
+  color: #355C7D;
+  transition: 0.3s all linear;
+  padding: 7px 0 20px 0;
+}
+.courses-card .card-info__topic a:hover {
+  color: #D95B43;
+}
+.courses-card .card-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses-card .card-btn {
+  padding: 9px 10px;
+  background: #355C7D;
+  border-radius: 5px;
+  color: #FFFFFF;
+  transition: 0.3s all linear;
+  font-size: 17px;
+  line-height: 28px;
+}
+.courses-card .card-btn:hover {
+  background: #D95B43;
+}
+.courses-card .card-lesson {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 12px;
+  line-height: 28px;
+  color: #86999B;
 }
 
 /*# sourceMappingURL=main.css.map */
