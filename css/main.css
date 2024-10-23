@@ -401,7 +401,6 @@ body {
   font-size: 20px;
   line-height: 25.52px;
   color: #355C7D;
-  padding: 29px 0 13px 0;
   max-width: inherit;
 }
 
@@ -415,6 +414,12 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header-top {
@@ -482,9 +487,9 @@ body {
 }
 
 .registration {
-  background: #F9F9F9;
-  border-bottom: 5px solid #F2F2F2;
-  border-top: 5px solid #F2F2F2;
+  background: #f9f9f9;
+  border-bottom: 5px solid #f2f2f2;
+  border-top: 5px solid #f2f2f2;
   padding: 30px 0;
   margin-top: -12px;
 }
@@ -501,7 +506,7 @@ body {
   margin-top: 30px;
 }
 .registration form input {
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 14px 0 14px 12px;
   border: none;
   border-radius: 5px;
@@ -656,9 +661,9 @@ body {
 .team-card__box {
   padding-top: 15px;
   padding-bottom: 12px;
-  border-left: 1px solid #F2F1F2;
-  border-bottom: 1px solid #F2F1F2;
-  border-right: 1px solid #F2F1F2;
+  border-left: 1px solid #f2f1f2;
+  border-bottom: 1px solid #f2f1f2;
+  border-right: 1px solid #f2f1f2;
   max-width: 274px;
 }
 .team-card__name {
@@ -693,8 +698,8 @@ body {
 .stats-card__icon {
   padding: 22px;
   border-radius: 50%;
-  border: 1px solid #EDEDED;
-  box-shadow: 0px 2px 1px 0px #233F57;
+  border: 1px solid #ededed;
+  box-shadow: 0px 2px 1px 0px #233f57;
   width: 66px;
   height: 66px;
   background-color: #FFFFFF;
@@ -714,7 +719,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 21.79px;
-  color: #739CBF;
+  color: #739cbf;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -723,11 +728,6 @@ body {
 
 .courses {
   padding: 80px 0 58px 0;
-}
-.courses .slider-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 .courses-cards {
   display: grid;
@@ -745,9 +745,9 @@ body {
   border-radius: 5px 5px 0 0;
 }
 .courses-card__info {
-  border-left: 1px solid #F2F1F2;
-  border-bottom: 1px solid #F2F1F2;
-  border-right: 1px solid #F2F1F2;
+  border-left: 1px solid #f2f1f2;
+  border-bottom: 1px solid #f2f1f2;
+  border-right: 1px solid #f2f1f2;
   padding: 25px 20px 20px 20px;
   max-width: 376px;
   margin-top: -5px;
@@ -791,6 +791,104 @@ body {
   font-size: 12px;
   line-height: 28px;
   color: #86999B;
+}
+
+.plans {
+  padding-bottom: 65px;
+}
+.plans-media {
+  padding: 50px 0 35px 0;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #f2f1f2;
+}
+.plans-media__img {
+  width: 100px;
+  height: 100px;
+}
+.plans-media__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.plans-media__text {
+  padding-left: 20px;
+}
+.plans-media__text .plans-text__subheader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.plans-media__text .plans-text__subheader .course-opening {
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+.plans-media__text .plans-text__subheader .palns-date {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #a4a093;
+}
+
+.blog {
+  padding-bottom: 80px;
+  width: 100%;
+  height: 100%;
+}
+.blog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tab {
+  padding-bottom: 95px;
+}
+.tab-list {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.tab-list__item {
+  border-radius: 5px 5px 0 0;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #f2f1f2;
+  padding: 16px;
+  font-family: "Mazzardh", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #2C2C2C;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.tab-list__item.active, .tab-list__item:hover {
+  box-shadow: 0px 2px 0px 0px #355c7d inset;
+}
+.tab-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px 17px 0 17px;
+}
+.tab-content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.promotion {
+  padding-bottom: 58px;
+}
+.promotion .container {
+  border: 1px solid #f2f1f2;
+  box-shadow: 0px 2px 0px 1px #f4f4f4;
+  padding: 50px 0 41px 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
