@@ -890,5 +890,46 @@ body {
   padding: 50px 0 41px 0;
   text-align: center;
 }
+.promotion-desc {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #86999B;
+  padding: 14px 0 38px 0;
+}
+.promotion-btn__link {
+  padding: 10px 15px;
+  background: #355C7D;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+}
+
+.footer-top {
+  border-top: 1px solid #f2f1f2;
+  border-bottom: 1px solid #f2f1f2;
+  padding: 30px 0;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-list__item {
+  border-right: 1px solid #86999b;
+  padding-right: 12px;
+}
+.footer-list__item.active {
+  border-right: none;
+}
+.footer-list__link {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #86999B;
+}
 
 /*# sourceMappingURL=main.css.map */
