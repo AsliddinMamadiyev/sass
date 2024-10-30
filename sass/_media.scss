@@ -1,0 +1,18 @@
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .header .nav-list {
+        gap: 0;
+    }
+    .header .nav-item {
+        line-height: 84px;
+    }
+    .header .nav-link {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}

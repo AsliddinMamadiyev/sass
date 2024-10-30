@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -426,13 +427,12 @@ body {
   background: #355C7D;
 }
 .header-top__box {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 0;
   display: flex;
   justify-content: space-between;
 }
 .header-top__number, .header-top__desc {
-  font-family: Open Sans;
+  font-family: "Mazzardh", sans-serif;
   font-size: 14px;
   line-height: 45px;
   color: #FFFFFF;
@@ -455,7 +455,8 @@ body {
 }
 .header .nav-list {
   display: flex;
-  justify-content: space-between;
+  gap: 2px;
+  align-items: center;
 }
 .header .nav-list .nav-item {
   line-height: 97px;
@@ -474,6 +475,135 @@ body {
 .header .nav-list .nav-link:hover {
   background: #D95B43;
   color: #FFFFFF;
+}
+
+.footer-top {
+  border-top: 1px solid #f2f1f2;
+  border-bottom: 1px solid #f2f1f2;
+  padding: 30px 0;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-list__item {
+  border-right: 1px solid #86999b;
+  padding-right: 12px;
+}
+.footer-list__item.active {
+  border-right: none;
+}
+.footer-list__link {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #86999B;
+  text-transform: capitalize;
+}
+.footer .footer-body {
+  background-color: #f2f1f2;
+}
+.footer .footer-body .container {
+  padding: 37px 0 48px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.footer .footer-body .footer-box {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-body .footer-box .logo-text {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #86999B;
+  max-width: 483px;
+}
+.footer .footer-body .footer-contact__info {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer .footer-body .footer-contact .contact-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer-body .footer-body__text {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #86999B;
+}
+.footer .footer-body .footer-body__text__detail {
+  font-weight: 600;
+}
+.footer .footer-body .footer-follow__info {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer-body .footer-follow .follow-social__icons {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.footer .footer-body .footer-follow .follow-social__icons .social-icons__link {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f2f1f2;
+}
+.footer-bottom {
+  padding: 23px 0;
+  background-color: #355C7D;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom__text {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.footer-bottom__text .design-link {
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.footer-bottom__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-bottom__link {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.footer-bottom__link.active {
+  border-right: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  padding: 0 7px;
 }
 
 .banner {
@@ -633,13 +763,12 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
 }
 .team-card__img .background:hover .background-link {
   opacity: 1;
 }
 .team-card__img .background-link {
-  transform: translate(-50%);
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -709,6 +838,7 @@ body {
   transform: rotate(360deg);
 }
 .stats-card__numb {
+  font-family: "Crete Round", sans-serif;
   font-size: 45px;
   line-height: 28px;
   color: #FFFFFF;
@@ -720,9 +850,6 @@ body {
   font-weight: 300;
   line-height: 21.79px;
   color: #739cbf;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 150px;
 }
 
@@ -834,17 +961,65 @@ body {
 }
 
 .blog {
-  padding-bottom: 80px;
-  width: 100%;
-  height: 100%;
+  position: relative;
 }
 .blog-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.blog .title {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog-meta__info {
+  width: 71px;
+}
+.blog-meta__info .meta-info__date {
+  background-color: #355C7D;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding: 11px 4px;
+}
+.blog-meta__info .meta-info__date .meta-info__day {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.blog-meta__info .meta-info__date .day-info {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  max-width: 63px;
+}
+.blog-meta__info .meta-info__comment {
+  background-color: #D95B43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 13px 20px;
+  border-radius: 0 0 5px 5px;
+}
+.blog-meta__info .meta-info__comment img {
+  width: 16px;
+  height: 14px;
+  object-fit: cover;
+}
+.blog-meta__info .meta-info__comment .comment-count {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
 
 .tab {
+  padding-top: 80px;
   padding-bottom: 95px;
 }
 .tab-list {
@@ -905,31 +1080,29 @@ body {
   font-family: "Mazzardh", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 19.07px;
+  line-height: 19px;
+  transition: 0.3s all linear;
+}
+.promotion-btn__link:hover {
+  background: #D95B43;
 }
 
-.footer-top {
-  border-top: 1px solid #f2f1f2;
-  border-bottom: 1px solid #f2f1f2;
-  padding: 30px 0;
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
 }
-.footer-list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.footer-list__item {
-  border-right: 1px solid #86999b;
-  padding-right: 12px;
-}
-.footer-list__item.active {
-  border-right: none;
-}
-.footer-list__link {
-  font-family: "Mazzardh", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #86999B;
+@media screen and (max-width: 950px) {
+  .header .nav-list {
+    gap: 0;
+  }
+  .header .nav-item {
+    line-height: 84px;
+  }
+  .header .nav-link {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
