@@ -423,6 +423,10 @@ body {
   gap: 12px;
 }
 
+.slider-controls img:hover {
+  color: #D95B43;
+}
+
 .header-top {
   background: #355C7D;
 }
@@ -624,6 +628,7 @@ body {
   margin-top: -12px;
 }
 .registration-title {
+  font-family: "Crete Round", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 28.07px;
@@ -631,9 +636,13 @@ body {
 }
 .registration form {
   display: flex;
+  margin-top: 30px;
+}
+.registration form .inputs {
+  display: flex;
   align-items: center;
   gap: 20px;
-  margin-top: 30px;
+  width: 100%;
 }
 .registration form input {
   background: #f2f2f2;
@@ -645,8 +654,7 @@ body {
 .registration form input::placeholder {
   font-family: "Mazzardh", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 19.07px;
+  line-height: 19px;
   color: #757575;
 }
 .registration form .btn {
@@ -961,43 +969,46 @@ body {
 }
 
 .blog {
-  position: relative;
-}
-.blog-img {
+  background-image: url(/images/blog-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 589px;
 }
 .blog .title {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  padding: 40px 0;
 }
-.blog-meta__info {
+.blog-entry {
+  display: flex;
+  gap: 29px;
+  align-items: start;
+}
+.blog-entry .blog-meta__info {
   width: 71px;
 }
-.blog-meta__info .meta-info__date {
+.blog-entry .blog-meta__info .meta-info__date {
   background-color: #355C7D;
   border-radius: 5px 5px 0 0;
   text-align: center;
   padding: 11px 4px;
 }
-.blog-meta__info .meta-info__date .meta-info__day {
+.blog-entry .blog-meta__info .meta-info__date .meta-info__day {
   font-family: "Mazzardh", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
   color: #FFFFFF;
 }
-.blog-meta__info .meta-info__date .day-info {
+.blog-entry .blog-meta__info .meta-info__date .day-info {
   font-family: "Mazzardh", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
   max-width: 63px;
 }
-.blog-meta__info .meta-info__comment {
+.blog-entry .blog-meta__info .meta-info__comment {
   background-color: #D95B43;
   display: flex;
   justify-content: center;
@@ -1006,16 +1017,75 @@ body {
   padding: 13px 20px;
   border-radius: 0 0 5px 5px;
 }
-.blog-meta__info .meta-info__comment img {
+.blog-entry .blog-meta__info .meta-info__comment img {
   width: 16px;
   height: 14px;
   object-fit: cover;
 }
-.blog-meta__info .meta-info__comment .comment-count {
+.blog-entry .blog-meta__info .meta-info__comment .comment-count {
   font-family: "Mazzardh", sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+}
+.blog-entry__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 470px;
+  border-radius: 5px;
+}
+.blog-entry__card .card-img {
+  width: 470px;
+  height: 190px;
+}
+.blog-entry__card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.blog-entry__card .blog-card__text {
+  padding: 22px 44px 27px 15px;
+  border-bottom: 1px solid #ECECEC;
+}
+.blog-entry__card .blog-card__text .blog-card__title {
+  font-family: "Crete Round", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #355C7D;
+  transition: all 0.3s linear;
+}
+.blog-entry__card .blog-card__text .blog-card__title:hover {
+  color: #D95B43;
+}
+.blog-entry__card .blog-card__text .blog-card__info {
+  font-family: "Mazzardh", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #86999B;
+  padding-top: 24px;
+}
+.blog-entry__card .blog-post__meta {
+  display: flex;
+  align-items: center;
+}
+.blog-entry__card .blog-post__meta .post-format {
+  width: 13px;
+  height: 13px;
+}
+.blog-entry__card .blog-post__meta .post-format img {
+  width: 100%;
+  height: 100%;
+}
+.blog-entry__card .blog-post__meta .post-format__box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.blog-entry__card .blog-post__meta .post-format__box.active {
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
 }
 
 .tab {
@@ -1091,17 +1161,54 @@ body {
   .container {
     padding: 0 20px;
   }
+  .registration form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .registration form .btn {
+    width: 100%;
+  }
+  .registration-title {
+    line-height: normal;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 950px) {
   .header .nav-list {
     gap: 0;
   }
-  .header .nav-item {
+  .header .nav-list .nav-item {
     line-height: 84px;
   }
-  .header .nav-link {
+  .header .nav-list .nav-link {
     font-size: 14px;
     padding: 8px 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-top__box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .header-top__desc,
+  .header-top__number {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .services-box {
+    justify-items: center;
+  }
+  .team .box {
+    padding-left: 120px;
+  }
+  .team .team-cards {
+    justify-items: center;
   }
 }
 

@@ -43,3 +43,6 @@ body {
     align-items: center;
     gap: 12px;
 }
+.slider-controls img:hover {
+    color: variables.$brown;
+}

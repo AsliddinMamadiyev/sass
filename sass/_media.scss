@@ -3,16 +3,53 @@
     .container {
         padding: 0 20px;
     }
+    .registration form {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .registration form .btn {
+        width: 100%;
+    }
+    .registration-title {
+        line-height: normal;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 950px) {
     .header .nav-list {
         gap: 0;
     }
-    .header .nav-item {
+    .header .nav-list .nav-item {
         line-height: 84px;
     }
-    .header .nav-link {
+    .header .nav-list .nav-link {
         font-size: 14px;
         padding: 8px 14px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header-top__box {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .header-top__desc,
+    .header-top__number {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .header .nav {
+        display: none;
+    }
+    .services-box {
+        justify-items: center;
+    }
+    .team .box {
+        padding-left: 120px;
+    }
+    .team .team-cards {
+        justify-items: center;
     }
 }

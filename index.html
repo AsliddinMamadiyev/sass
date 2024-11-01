@@ -83,8 +83,10 @@
               Newsletter
             </h5>
             <form>
-              <input type="text" placeholder="Enter Name" />
+              <div class="inputs">
+                <input type="text" placeholder="Enter Name" />
               <input type="email" placeholder="Enter Email" />
+              </div>
               <button class="btn" type="submit">Subscribe</button>
             </form>
           </div>
@@ -533,8 +535,7 @@
           </div>
         </section>
         <!-- blog -->
-        <!-- <section class="blog">
-            <img class="blog-img" src="images/blog-background.svg" alt="blog background">
+        <section class="blog">
           <div class="container">
             <h2 class="title">OUR BLOG</h2>
             <div class="blog-entry">
@@ -548,10 +549,34 @@
                         <p class="comment-count">0</p>
                     </div>
                 </div>
-                <div class="blog-card"></div>
+                <div class="blog-entry__card">
+                  <div class="card-img">
+                    <a class="blog-card__link" href="#">
+                      <img src="images/blog-img.svg" alt="card img">
+                    </a>
+                  </div>
+                  <div class="blog-card__text">
+                    <a class="blog-card__title" href="#">Five Training Roles of the CEO</a>
+                  <p class="blog-card__info">Cras venenatis erat ac massa ultricies, sollici tudin ullamc orper
+                    justo elementum. Donec eu molestie odio, et congue enim....</p>
+                  </div>
+                    <div class="blog-post__meta">
+                      <div class="post-format">
+                        <img src="images/icons/chain-icon.svg" alt="chain icon">
+                      </div>
+                      <div class="post-format__box active">
+                        <img src="images/icons/mini-user-icon.svg" alt="user icon">
+                        <a class="post-link" href="#">Ram</a>
+                      </div>
+                      <div class="post-format__box">
+                        <img src="images/icons/pin-icon.svg" alt="pin icon">
+                        <a class="post-link" href="#">Design</a>
+                      </div>
+                    </div>
+                </div>
             </div>
           </div>
-        </section> -->
+        </section>
         <!-- tab -->
         <section class="tab">
           <div class="container">
