@@ -388,7 +388,7 @@ body {
   font-size: 22px;
   line-height: 28.07px;
   color: #2C2C2C;
-  white-space: nowrap;
+  text-transform: capitalize;
 }
 
 .desc {
@@ -504,6 +504,10 @@ body {
   line-height: 20px;
   color: #86999B;
   text-transform: capitalize;
+  transition: 0.3s all linear;
+}
+.footer-list__link:hover {
+  color: #D95B43;
 }
 .footer .footer-body {
   background-color: #f2f1f2;
@@ -543,12 +547,17 @@ body {
 .footer .footer-body .footer-body__text {
   font-family: "Mazzardh", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 22px;
   color: #86999B;
 }
-.footer .footer-body .footer-body__text__detail {
-  font-weight: 600;
+.footer .footer-body .footer-body__text .contact-text__link {
+  font-weight: 400;
+  color: #86999B;
+  transition: all 0.3s linear;
+}
+.footer .footer-body .footer-body__text .contact-text__link:hover {
+  color: #D95B43;
 }
 .footer .footer-body .footer-follow__info {
   padding-top: 40px;
@@ -572,6 +581,13 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #f2f1f2;
+}
+.footer .footer-body .footer-follow .follow-social__icons .social-icons__link:hover {
+  border: 1px solid red;
+  fill: red;
+}
+.footer .footer-body .footer-follow .follow-social__icons .social-icons__link svg path:hover {
+  fill: red;
 }
 .footer-bottom {
   padding: 23px 0;
@@ -636,13 +652,9 @@ body {
 }
 .registration form {
   display: flex;
-  margin-top: 30px;
-}
-.registration form .inputs {
-  display: flex;
-  align-items: center;
   gap: 20px;
-  width: 100%;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 .registration form input {
   background: #f2f2f2;
@@ -980,6 +992,11 @@ body {
   text-align: center;
   padding: 40px 0;
 }
+.blog .blog-content__entry {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .blog-entry {
   display: flex;
   gap: 29px;
@@ -1069,6 +1086,8 @@ body {
 .blog-entry__card .blog-post__meta {
   display: flex;
   align-items: center;
+  gap: 18px;
+  padding-left: 18px;
 }
 .blog-entry__card .blog-post__meta .post-format {
   width: 13px;
@@ -1086,6 +1105,13 @@ body {
 .blog-entry__card .blog-post__meta .post-format__box.active {
   border-left: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
+  padding: 10px 18px;
+}
+.blog-entry__card .blog-post__meta .post-link {
+  font-family: "MazzardH", sans-serif;
+  font-size: 14px;
+  line-height: 49px;
+  color: #86999B;
 }
 
 .tab {
@@ -1131,9 +1157,10 @@ body {
 }
 .promotion .container {
   border: 1px solid #f2f1f2;
-  box-shadow: 0px 2px 0px 1px #f4f4f4;
   padding: 50px 0 41px 0;
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px 1px #F4F4F4 inset;
 }
 .promotion-desc {
   font-family: "Mazzardh", sans-serif;
@@ -1172,6 +1199,12 @@ body {
     line-height: normal;
     text-align: center;
   }
+  .registration form input {
+    width: 100%;
+  }
+  .promotion {
+    padding: 0 50px;
+  }
 }
 @media screen and (max-width: 950px) {
   .header .nav-list {
@@ -1205,10 +1238,27 @@ body {
     justify-items: center;
   }
   .team .box {
-    padding-left: 120px;
+    padding-left: 20px;
   }
   .team .team-cards {
     justify-items: center;
+  }
+  .tab {
+    padding: 0 100px;
+  }
+  .tab .tab-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tab .tab-list__item {
+    width: 100%;
+  }
+  .tab .tab-content {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .promotion {
+    padding: 50px 100px;
   }
 }
 

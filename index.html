@@ -83,10 +83,8 @@
               Newsletter
             </h5>
             <form>
-              <div class="inputs">
-                <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Name" />
               <input type="email" placeholder="Enter Email" />
-              </div>
               <button class="btn" type="submit">Subscribe</button>
             </form>
           </div>
@@ -538,42 +536,103 @@
         <section class="blog">
           <div class="container">
             <h2 class="title">OUR BLOG</h2>
-            <div class="blog-entry">
+            <div class="blog-content__entry">
+              <div class="blog-entry">
                 <div class="blog-meta__info">
-                    <div class="meta-info__date">
-                        <span class="meta-info__day">20</span>
-                        <p class="day-info">May 2016</p>
-                    </div>
-                    <div class="meta-info__comment">
-                        <img src="images/icons/comment-icon.svg" alt="comment icon">
-                        <p class="comment-count">0</p>
-                    </div>
+                  <div class="meta-info__date">
+                    <span class="meta-info__day">20</span>
+                    <p class="day-info">May 2016</p>
+                  </div>
+                  <div class="meta-info__comment">
+                    <img
+                      src="images/icons/comment-icon.svg"
+                      alt="comment icon"
+                    />
+                    <p class="comment-count">0</p>
+                  </div>
                 </div>
                 <div class="blog-entry__card">
                   <div class="card-img">
                     <a class="blog-card__link" href="#">
-                      <img src="images/blog-img.svg" alt="card img">
+                      <img src="images/blog-img.svg" alt="card img" />
                     </a>
                   </div>
                   <div class="blog-card__text">
-                    <a class="blog-card__title" href="#">Five Training Roles of the CEO</a>
-                  <p class="blog-card__info">Cras venenatis erat ac massa ultricies, sollici tudin ullamc orper
-                    justo elementum. Donec eu molestie odio, et congue enim....</p>
+                    <a class="blog-card__title" href="#"
+                      >Five Training Roles of the CEO</a
+                    >
+                    <p class="blog-card__info">
+                      Cras venenatis erat ac massa ultricies, sollici tudin
+                      ullamc orper justo elementum. Donec eu molestie odio, et
+                      congue enim....
+                    </p>
                   </div>
-                    <div class="blog-post__meta">
-                      <div class="post-format">
-                        <img src="images/icons/chain-icon.svg" alt="chain icon">
-                      </div>
-                      <div class="post-format__box active">
-                        <img src="images/icons/mini-user-icon.svg" alt="user icon">
-                        <a class="post-link" href="#">Ram</a>
-                      </div>
-                      <div class="post-format__box">
-                        <img src="images/icons/pin-icon.svg" alt="pin icon">
-                        <a class="post-link" href="#">Design</a>
-                      </div>
+                  <div class="blog-post__meta">
+                    <div class="post-format">
+                      <img src="images/icons/chain-icon.svg" alt="chain icon" />
                     </div>
+                    <div class="post-format__box active">
+                      <img
+                        src="images/icons/mini-user-icon.svg"
+                        alt="user icon"
+                      />
+                      <a class="post-link" href="#">Ram</a>
+                    </div>
+                    <div class="post-format__box">
+                      <img src="images/icons/pin-icon.svg" alt="pin icon" />
+                      <a class="post-link" href="#">Design</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="blog-entry">
+                <div class="blog-meta__info">
+                  <div class="meta-info__date">
+                    <span class="meta-info__day">20</span>
+                    <p class="day-info">May 2016</p>
+                  </div>
+                  <div class="meta-info__comment">
+                    <img
+                      src="images/icons/comment-icon.svg"
+                      alt="comment icon"
+                    />
+                    <p class="comment-count">0</p>
+                  </div>
+                </div>
+                <div class="blog-entry__card">
+                  <div class="card-img">
+                    <a class="blog-card__link" href="#">
+                      <img src="images/blog-img.svg" alt="card img" />
+                    </a>
+                  </div>
+                  <div class="blog-card__text">
+                    <a class="blog-card__title" href="#"
+                      >Five Training Roles of the CEO</a
+                    >
+                    <p class="blog-card__info">
+                      Cras venenatis erat ac massa ultricies, sollici tudin
+                      ullamc orper justo elementum. Donec eu molestie odio, et
+                      congue enim....
+                    </p>
+                  </div>
+                  <div class="blog-post__meta">
+                    <div class="post-format">
+                      <img src="images/icons/chain-icon.svg" alt="chain icon" />
+                    </div>
+                    <div class="post-format__box active">
+                      <img
+                        src="images/icons/mini-user-icon.svg"
+                        alt="user icon"
+                      />
+                      <a class="post-link" href="#">Ram</a>
+                    </div>
+                    <div class="post-format__box">
+                      <img src="images/icons/pin-icon.svg" alt="pin icon" />
+                      <a class="post-link" href="#">Design</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -620,9 +679,7 @@
               Placements.
             </h5>
             <p class="promotion-desc">You’ll get what you came for!</p>
-            <button class="promotion-btn" type="button">
-              <a class="promotion-btn__link" href="#">Read More</a>
-            </button>
+            <a class="promotion-btn__link" href="#">Read More</a>
           </div>
         </section>
       </main>
@@ -673,8 +730,10 @@
                     alt="location icon"
                   />
                   <p class="footer-body__text">
-                    <span class="contact-text__detail">Address:</span> 103, C
-                    Block, West Street, New York, BMC, US
+                    Address:
+                    <span class="contact-text__link"
+                      >103, C Block, West Street, New York, BMC, US</span
+                    >
                   </p>
                 </div>
                 <div class="contact-tag">
@@ -682,17 +741,21 @@
                     src="images/icons/message-icon.svg"
                     alt="location icon"
                   />
-                  <p class="footer-body__text">
-                    <span class="contact-text__detail">Mail:</span>
-                    enquiries@gmail.com
-                  </p>
+                  <span class="footer-body__text"
+                    >Mail:
+                    <a class="contact-text__link" href="#!"
+                      >enquiries@gmail.com</a
+                    ></span
+                  >
                 </div>
                 <div class="contact-tag">
                   <img src="images/icons/phone-icon.svg" alt="location icon" />
-                  <p class="footer-body__text">
-                    <span class="contact-text__detail">Phone:</span> +998 93 809
-                    00 06
-                  </p>
+                  <span class="footer-body__text"
+                    >Phone:
+                    <a class="contact-text__link" href="#!"
+                      >+998 93 809 00 06</a
+                    ></span
+                  >
                 </div>
               </div>
             </div>
@@ -700,17 +763,34 @@
               <h5 class="title-info">Follow Us</h5>
               <div class="footer-follow__info">
                 <div class="follow-social__icons">
-                  <a class="social-icons__link" href="#"
-                    ><img
-                      src="images/icons/youtube-icon.svg"
-                      alt="facebook icon"></a>
-                  <a class="social-icons__link" href="#"
+                  <div class="rrr">
+                    <a class="social-icons__link" href="#!"
+                      ><svg
+                        width="10"
+                        height="17"
+                        viewBox="0 0 10 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.32823 0.358398V3.01018H7.75122C7.17533 3.01018 6.78693 3.13072 6.58604 3.37179C6.38515 3.61286 6.2847 3.97447 6.2847 4.45661V6.35505H9.22778L8.83604 9.32826H6.2847V16.9521H3.21104V9.32826H0.649658V6.35505H3.21104V4.16532C3.21104 2.91978 3.55926 1.95382 4.25568 1.26744C4.95211 0.581055 5.87957 0.237864 7.03805 0.237864C8.02243 0.237864 8.78582 0.278042 9.32823 0.358398Z"
+                          fill="#86999B"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <a class="social-icons__link" href="#!"
                     ><img
                       src="images/icons/twitter-icon.svg"
-                      alt="twitter icon"></a>
-                  <a class="social-icons__link" href="#"><img
+                      alt="twitter icon"
+                    />
+                  </a>
+                  <a class="social-icons__link" href="#!"
+                    ><img
                       src="images/icons/youtube-icon.svg"
-                      alt="instagram icon"></a>
+                      alt="instagram icon"
+                    />
+                  </a>
                 </div>
                 <p class="footer-body__text">We can be supported here!</p>
               </div>
@@ -720,7 +800,7 @@
         <div class="footer-bottom">
           <div class="container">
             <p class="footer-bottom__text">
-              © 2017 - Guru - by
+              © 2024 - Asliddin by
               <a class="design-link" href="#">Design Themes</a>
             </p>
             <ul class="footer-bottom__list">

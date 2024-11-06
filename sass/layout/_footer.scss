@@ -23,6 +23,10 @@
       line-height: 20px;
       color: variables.$gray;
       text-transform: capitalize;
+      transition: .3s all linear;
+    }
+    &__link:hover {
+      color: variables.$brown;
     }
   }
   // footer-body
@@ -65,11 +69,16 @@
     .footer-body__text {
       font-family: "Mazzardh", sans-serif;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 22px;
       color: variables.$gray;
-      &__detail {
-        font-weight: 600;
+      .contact-text__link {
+        font-weight: 400;
+        color: variables.$gray;
+        transition: all .3s linear;
+      }
+      .contact-text__link:hover {
+        color: variables.$brown;
       }
     }
     .footer-follow {
@@ -95,6 +104,13 @@
           justify-content: center;
           border: 1px solid #f2f1f2;
         }
+          .social-icons__link:hover {
+            border: 1px solid red;
+            fill: red;
+          }
+          .social-icons__link svg path:hover {
+            fill: red;
+          }
       }
     }
   }

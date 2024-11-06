@@ -10,7 +10,7 @@ body {
     font-size: 22px;
     line-height: 28.07px;
     color: variables.$primary-title;
-    white-space: nowrap;
+    text-transform: capitalize;
 }
 
 .desc {
