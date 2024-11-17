@@ -585,6 +585,12 @@
       flex-direction: column;
       gap: 31px;
     }
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+    }
   }
 }
 // promotion
